@@ -1,13 +1,17 @@
 # screen/screen01.py
 import pyxel
 
-class Screen01:
+from .base import Setting
+
+class Screen01(Setting):
     def __init__(self):
+        super().__init__()
         self.message = "This is sample"
 
     def update(self):
-        pass
+        self.update_common()
 
     def draw(self):
-        pyxel.cls(0)
-        pyxel.text(10, 10, self.message, 7)
+        pyxel.text(160, 120, "debug01",5)
+        pyxel.text(100, 120, self.message, 5)
+        self.draw_common()
