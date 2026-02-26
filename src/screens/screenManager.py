@@ -1,7 +1,7 @@
 import pyxel
 
 #画面インポート
-from .sampleScreen01Old import Screen01
+from .sampleScreen01 import Screen01
 
 
 #現在mainから01を直接呼んでいます。将来的にここから画面遷移を行いま。
